@@ -1,0 +1,302 @@
+[
+  {
+    "constant": false,
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "isOwner",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "who",
+        "type": "address"
+      }
+    ],
+    "name": "getNumberOfAvatarsOf",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "who",
+        "type": "address"
+      }
+    ],
+    "name": "getAvatarsOf",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "string",
+                "name": "faceLength",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "eyeSize",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "eyeDistance",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "mouthSize",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "body",
+                "type": "string"
+              }
+            ],
+            "internalType": "struct AvatarRegistry.Variables",
+            "name": "variables",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "string",
+                "name": "categoryId",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "id",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "color",
+                "type": "string"
+              },
+              {
+                "internalType": "string[]",
+                "name": "attributes",
+                "type": "string[]"
+              }
+            ],
+            "internalType": "struct AvatarRegistry.Item[]",
+            "name": "items",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct AvatarRegistry.Avatar[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "who",
+        "type": "address"
+      }
+    ],
+    "name": "getSelectionOf",
+    "outputs": [
+      {
+        "internalType": "int256",
+        "name": "",
+        "type": "int256"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "string",
+                "name": "faceLength",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "eyeSize",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "eyeDistance",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "mouthSize",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "body",
+                "type": "string"
+              }
+            ],
+            "internalType": "struct AvatarRegistry.Variables",
+            "name": "variables",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "string",
+                "name": "categoryId",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "id",
+                "type": "string"
+              },
+              {
+                "internalType": "string",
+                "name": "color",
+                "type": "string"
+              },
+              {
+                "internalType": "string[]",
+                "name": "attributes",
+                "type": "string[]"
+              }
+            ],
+            "internalType": "struct AvatarRegistry.Item[]",
+            "name": "items",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct AvatarRegistry.Avatar",
+        "name": "avatar",
+        "type": "tuple"
+      }
+    ],
+    "name": "addAvatar",
+    "outputs": [],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "int256",
+        "name": "index",
+        "type": "int256"
+      }
+    ],
+    "name": "selectAvatar",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

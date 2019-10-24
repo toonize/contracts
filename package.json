@@ -1,0 +1,41 @@
+{
+  "name": "toonize-contracts",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "files": [
+    "abis",
+    "contracts",
+    "networks"
+  ],
+  "scripts": {
+    "compile": "./node_modules/.bin/truffle compile",
+    "build": "./node_modules/.bin/truffle compile --all && node scripts/build.js",
+    "test": "./scripts/test.sh",
+    "deploy:extdev": "./node_modules/.bin/truffle deploy --network extdev",
+    "deploy:plasma": "./node_modules/.bin/truffle deploy --network plasma",
+    "prettier": "./node_modules/.bin/prettier contracts/**/*.sol --write ",
+    "prettier:js": "./node_modules/.bin/prettier test/**/*.js --write --print-width 120"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^2.3.0"
+  },
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.3",
+    "chai": "^4.2.0",
+    "dotenv": "^8.2.0",
+    "ganache-cli": "^6.4.3",
+    "husky": "^2.3.0",
+    "loom-js": "^1.51.1",
+    "loom-truffle-provider": "^0.13.0",
+    "prettier": "^1.18.2",
+    "prettier-plugin-solidity": "^1.0.0-alpha.34",
+    "solhint": "^2.0.0",
+    "truffle": "^5.0.41"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn build"
+    }
+  }
+}
