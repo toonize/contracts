@@ -1,6 +1,10 @@
-# LevX Contracts
+# Toonize Contracts
 
-Solidity contracts for LevX. Users can exchange their [ERC20](https://eips.ethereum.org/EIPS/eip-20) or [ERC721](https://eips.ethereum.org/EIPS/eip-721) asset just in a second.
+Solidity contracts for Toonize.
+
+## What is Toonize?
+Every face is beautiful.
+Make a beautiful avatar that looks just like you and record on blockchain. [https://beta.toonize.me](https://beta.toonize.me)
 
 ## Development
 
@@ -11,7 +15,7 @@ First, install Node.js and npm. Then grep the source code.
 Fork this repo and clone it to your local machine:
 
 ```sh
-$ git clone git@github.com:your-username/exchange.git
+$ git clone git@github.com:your-username/contracts.git
 ```
 
 Once git clone is done, use npm to install dependencies:
@@ -22,10 +26,8 @@ $ npm install
 
 ### Truffle network
 
-- `coverage`: this network is for **solidity-coverage** report
-- `development`: this network is used for local development
-- `deploy`: this network is used for deploying contracts
-- `console`: this network is used for `truffle console`
+- `extdev`: [Loom Network](https://loomx.io/developers/en/intro-to-loom.html) Testnet
+- `plasma`: [Loom Network](https://loomx.io/developers/en/intro-to-loom.html) Mainnet
 
 ### Test
 
@@ -35,14 +37,6 @@ To run tests, run command below:
 $ npm run test
 ```
 
-#### Coverage
-
-To get coverage report, run command below:
-
-```sh
-$ npm run test:coverage
-```
-
 ## License
 
-LevX is licensed under the [MIT License](/LICENSE).
+Toonize is licensed under the [MIT License](/LICENSE).
