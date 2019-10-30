@@ -21,9 +21,10 @@
   },
   "homepage": "https://github.com/toonize/contracts",
   "scripts": {
-    "compile": "./node_modules/.bin/truffle compile --all",
-    "tsc": "./node_modules/typescript/bin/tsc",
-    "build": "yarn compile && node scripts/build.js && yarn tsc",
+    "compile:sol": "./node_modules/.bin/truffle compile --all",
+    "compile:ts": "./node_modules/typescript/bin/tsc",
+    "compile": "yarn compile:sol && yarn compile:ts",
+    "build": "yarn compile && node scripts/build.js",
     "test": "./scripts/test.sh",
     "deploy:extdev": "./node_modules/.bin/truffle deploy --network extdev",
     "deploy:plasma": "./node_modules/.bin/truffle deploy --network plasma",

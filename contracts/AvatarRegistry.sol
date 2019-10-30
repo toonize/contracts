@@ -20,32 +20,17 @@ contract AvatarRegistry is Ownable {
         _price = price;
     }
 
-    function getNumberOfAvatarsOf(address account)
-        public
-        view
-        returns (uint256 numberOfAvatars)
-    {
+    function getNumberOfAvatarsOf(address account) public view returns (uint256 numberOfAvatars) {
         return _avatarsOfAccount[account].length;
     }
 
-    function getAvatarsOf(address account)
-        public
-        view
-        returns (bytes20[] memory hashes)
-    {
+    function getAvatarsOf(address account) public view returns (bytes20[] memory hashes) {
         return _avatarsOfAccount[account];
     }
 
-    function getSelectedAvatarOf(address account)
-        public
-        view
-        returns (bytes20 hash)
-    {
+    function getSelectedAvatarOf(address account) public view returns (bytes20 hash) {
         int256 selection = _selectionOfAccount[account];
-        return
-            _avatarsOfAccount[account].length == 0
-                ? bytes20(0)
-                : _avatarsOfAccount[account][uint256(selection)];
+        return _avatarsOfAccount[account].length == 0 ? bytes20(0) : _avatarsOfAccount[account][uint256(selection)];
     }
 
     function accountOfAvatar(bytes20 hash) public view returns (address) {
@@ -85,18 +70,12 @@ contract AvatarRegistry is Ownable {
         emit AvatarSelected(msg.sender, hash);
     }
 
-    function setAttribute(bytes20 hash, string memory key, bytes memory value)
-        public
-    {
+    function setAttribute(bytes20 hash, string memory key, bytes memory value) public {
         require(_getIndexOfAvatar(hash) >= 0);
         _attributesOfAvatar[hash][key] = value;
     }
 
-    function getAttribute(bytes20 hash, string memory key)
-        public
-        view
-        returns (bytes memory value)
-    {
+    function getAttribute(bytes20 hash, string memory key) public view returns (bytes memory value) {
         return _attributesOfAvatar[hash][key];
     }
 
