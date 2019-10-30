@@ -69,6 +69,69 @@
     "anonymous": false,
     "inputs": [
       {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes20",
+        "name": "hash",
+        "type": "bytes20"
+      }
+    ],
+    "name": "AvatarAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes20",
+        "name": "hash",
+        "type": "bytes20"
+      }
+    ],
+    "name": "AvatarSelected",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bytes20",
+        "name": "hash",
+        "type": "bytes20"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "key",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes",
+        "name": "value",
+        "type": "bytes"
+      }
+    ],
+    "name": "AttributeSet",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
         "indexed": true,
         "internalType": "address",
         "name": "previousOwner",
@@ -89,7 +152,7 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "who",
+        "name": "account",
         "type": "address"
       }
     ],
@@ -97,7 +160,7 @@
     "outputs": [
       {
         "internalType": "uint256",
-        "name": "",
+        "name": "numberOfAvatars",
         "type": "uint256"
       }
     ],
@@ -110,77 +173,16 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "who",
+        "name": "account",
         "type": "address"
       }
     ],
     "name": "getAvatarsOf",
     "outputs": [
       {
-        "components": [
-          {
-            "components": [
-              {
-                "internalType": "string",
-                "name": "faceLength",
-                "type": "string"
-              },
-              {
-                "internalType": "string",
-                "name": "eyeSize",
-                "type": "string"
-              },
-              {
-                "internalType": "string",
-                "name": "eyeDistance",
-                "type": "string"
-              },
-              {
-                "internalType": "string",
-                "name": "mouthSize",
-                "type": "string"
-              },
-              {
-                "internalType": "string",
-                "name": "body",
-                "type": "string"
-              }
-            ],
-            "internalType": "struct AvatarRegistry.Variables",
-            "name": "variables",
-            "type": "tuple"
-          },
-          {
-            "components": [
-              {
-                "internalType": "string",
-                "name": "categoryId",
-                "type": "string"
-              },
-              {
-                "internalType": "string",
-                "name": "id",
-                "type": "string"
-              },
-              {
-                "internalType": "string",
-                "name": "color",
-                "type": "string"
-              },
-              {
-                "internalType": "string[]",
-                "name": "attributes",
-                "type": "string[]"
-              }
-            ],
-            "internalType": "struct AvatarRegistry.Item[]",
-            "name": "items",
-            "type": "tuple[]"
-          }
-        ],
-        "internalType": "struct AvatarRegistry.Avatar[]",
-        "name": "",
-        "type": "tuple[]"
+        "internalType": "bytes20[]",
+        "name": "hashes",
+        "type": "bytes20[]"
       }
     ],
     "payable": false,
@@ -192,16 +194,37 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "who",
+        "name": "account",
         "type": "address"
       }
     ],
-    "name": "getSelectionOf",
+    "name": "getSelectedAvatarOf",
     "outputs": [
       {
-        "internalType": "int256",
+        "internalType": "bytes20",
+        "name": "hash",
+        "type": "bytes20"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "bytes20",
+        "name": "hash",
+        "type": "bytes20"
+      }
+    ],
+    "name": "accountOfAvatar",
+    "outputs": [
+      {
+        "internalType": "address",
         "name": "",
-        "type": "int256"
+        "type": "address"
       }
     ],
     "payable": false,
@@ -212,70 +235,9 @@
     "constant": false,
     "inputs": [
       {
-        "components": [
-          {
-            "components": [
-              {
-                "internalType": "string",
-                "name": "faceLength",
-                "type": "string"
-              },
-              {
-                "internalType": "string",
-                "name": "eyeSize",
-                "type": "string"
-              },
-              {
-                "internalType": "string",
-                "name": "eyeDistance",
-                "type": "string"
-              },
-              {
-                "internalType": "string",
-                "name": "mouthSize",
-                "type": "string"
-              },
-              {
-                "internalType": "string",
-                "name": "body",
-                "type": "string"
-              }
-            ],
-            "internalType": "struct AvatarRegistry.Variables",
-            "name": "variables",
-            "type": "tuple"
-          },
-          {
-            "components": [
-              {
-                "internalType": "string",
-                "name": "categoryId",
-                "type": "string"
-              },
-              {
-                "internalType": "string",
-                "name": "id",
-                "type": "string"
-              },
-              {
-                "internalType": "string",
-                "name": "color",
-                "type": "string"
-              },
-              {
-                "internalType": "string[]",
-                "name": "attributes",
-                "type": "string[]"
-              }
-            ],
-            "internalType": "struct AvatarRegistry.Item[]",
-            "name": "items",
-            "type": "tuple[]"
-          }
-        ],
-        "internalType": "struct AvatarRegistry.Avatar",
-        "name": "avatar",
-        "type": "tuple"
+        "internalType": "bytes20",
+        "name": "hash",
+        "type": "bytes20"
       }
     ],
     "name": "addAvatar",
@@ -288,15 +250,66 @@
     "constant": false,
     "inputs": [
       {
-        "internalType": "int256",
-        "name": "index",
-        "type": "int256"
+        "internalType": "bytes20",
+        "name": "hash",
+        "type": "bytes20"
       }
     ],
     "name": "selectAvatar",
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "bytes20",
+        "name": "hash",
+        "type": "bytes20"
+      },
+      {
+        "internalType": "string",
+        "name": "key",
+        "type": "string"
+      },
+      {
+        "internalType": "bytes",
+        "name": "value",
+        "type": "bytes"
+      }
+    ],
+    "name": "setAttribute",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "bytes20",
+        "name": "hash",
+        "type": "bytes20"
+      },
+      {
+        "internalType": "string",
+        "name": "key",
+        "type": "string"
+      }
+    ],
+    "name": "getAttribute",
+    "outputs": [
+      {
+        "internalType": "bytes",
+        "name": "value",
+        "type": "bytes"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
     "type": "function"
   }
 ]
