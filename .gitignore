@@ -10,6 +10,9 @@ coverage/
 coverage.json
 coverageEnv
 
+# typescript build directory
+dist/
+
 # node dependency directory
 node_modules/
 

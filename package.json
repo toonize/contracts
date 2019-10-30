@@ -1,11 +1,12 @@
 {
   "name": "@toonize/contracts",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "license": "MIT",
   "files": [
     "abis",
     "contracts",
-    "networks"
+    "networks",
+    "dist"
   ],
   "author": {
     "name": "Yoonjae Yoo",
@@ -20,16 +21,19 @@
   },
   "homepage": "https://github.com/toonize/contracts",
   "scripts": {
-    "compile": "./node_modules/.bin/truffle compile",
-    "build": "./node_modules/.bin/truffle compile --all && node scripts/build.js",
+    "compile": "./node_modules/.bin/truffle compile --all",
+    "tsc": "./node_modules/typescript/bin/tsc",
+    "build": "yarn compile && node scripts/build.js && yarn tsc",
     "test": "./scripts/test.sh",
     "deploy:extdev": "./node_modules/.bin/truffle deploy --network extdev",
     "deploy:plasma": "./node_modules/.bin/truffle deploy --network plasma",
     "prettier": "yarn prettier:sol && yarn prettier:js",
-    "prettier:sol": "./node_modules/.bin/prettier contracts/**/*.sol --write ",
-    "prettier:js": "./node_modules/.bin/prettier test/**/*.js --write --print-width 120"
+    "prettier:sol": "./node_modules/.bin/prettier contracts/**/*.sol --write",
+    "prettier:ts": "./node_modules/.bin/prettier src/**/*.ts --write",
+    "prettier:js": "./node_modules/.bin/prettier test/**/*.js --write"
   },
   "dependencies": {
+    "@lev-x/loom-x": "^0.1.0",
     "@openzeppelin/contracts": "^2.3.0"
   },
   "devDependencies": {
@@ -43,6 +47,11 @@
     "prettier": "^1.18.2",
     "prettier-plugin-solidity": "^1.0.0-alpha.34",
     "solhint": "^2.0.0",
+    "tslint": "^5.15.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typedoc": "^0.14.2",
+    "typescript": "3.4.1",
     "truffle": "^5.0.41"
   },
   "husky": {
