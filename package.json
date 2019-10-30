@@ -31,7 +31,8 @@
     "prettier": "yarn prettier:sol && yarn prettier:js",
     "prettier:sol": "./node_modules/.bin/prettier contracts/**/*.sol --write",
     "prettier:ts": "./node_modules/.bin/prettier src/**/*.ts --write",
-    "prettier:js": "./node_modules/.bin/prettier test/**/*.js --write"
+    "prettier:js": "./node_modules/.bin/prettier test/**/*.js --write",
+    "prepublish": "yarn build"
   },
   "dependencies": {
     "@lev-x/loom-x": "^0.1.0",
