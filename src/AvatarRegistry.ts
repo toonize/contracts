@@ -15,27 +15,27 @@ export default class AvatarRegistry extends ethers.Contract {
         super(address, require("../abis/AvatarRegistry.json"), signerOrProvider);
     }
 
-    public getNumberOfAvatarsOf(account: Address, overrides?: {}): Promise<BigNumber> {
+    public getNumberOfAvatarsOf(account: Address, overrides = {}): Promise<BigNumber> {
         return this.functions.getNumberOfAvatarsOf(account.toLocalAddressString(), overrides);
     }
 
-    public getAvatarsOf(account: Address, overrides?: {}): Promise<string[]> {
+    public getAvatarsOf(account: Address, overrides = {}): Promise<string[]> {
         return this.functions.getAvatarsOf(account.toLocalAddressString(), overrides);
     }
 
-    public getSelectedAvatarOf(account: Address, overrides?: {}): Promise<string> {
+    public getSelectedAvatarOf(account: Address, overrides = {}): Promise<string> {
         return this.functions.getSelectedAvatarOf(account.toLocalAddressString(), overrides);
     }
 
-    public accountOfAvatar(hash: string, overrides?: {}): Promise<string> {
+    public accountOfAvatar(hash: string, overrides = {}): Promise<string> {
         return this.functions.accountOfAvatar(hash, overrides);
     }
 
-    public addAvatar(hash: string, overrides?: {}): Promise<ethers.providers.TransactionResponse> {
+    public addAvatar(hash: string, overrides = {}): Promise<ethers.providers.TransactionResponse> {
         return this.functions.addAvatar(hash, overrides);
     }
 
-    public selectAvatar(hash: string, overrides?: {}): Promise<ethers.providers.TransactionResponse> {
+    public selectAvatar(hash: string, overrides = {}): Promise<ethers.providers.TransactionResponse> {
         return this.functions.selectAvatar(hash, overrides);
     }
 
@@ -43,12 +43,12 @@ export default class AvatarRegistry extends ethers.Contract {
         hash: string,
         key: string,
         value: string,
-        overrides?: {}
+        overrides = {}
     ): Promise<ethers.providers.TransactionResponse> {
         return this.functions.setAttribute(hash, key, value, overrides);
     }
 
-    public getAttribute(hash: string, key: string, overrides?: {}): Promise<string> {
+    public getAttribute(hash: string, key: string, overrides = {}): Promise<string> {
         return this.functions.getAttribute(hash, key, overrides);
     }
 }
