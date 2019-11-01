@@ -1,6 +1,6 @@
 {
   "name": "@toonize/contracts",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "files": [
     "abis",
@@ -49,12 +49,12 @@
     "prettier": "^1.18.2",
     "prettier-plugin-solidity": "^1.0.0-alpha.34",
     "solhint": "^2.0.0",
+    "truffle": "^5.0.41",
     "tslint": "^5.15.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
     "typedoc": "^0.14.2",
-    "typescript": "3.4.1",
-    "truffle": "^5.0.41"
+    "typescript": "3.4.1"
   },
   "husky": {
     "hooks": {
