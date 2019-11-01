@@ -35,7 +35,7 @@
     "prepublish": "yarn build"
   },
   "dependencies": {
-    "@lev-x/loom-x": "^0.1.0",
+    "@lev-x/loom-x": "^0.5.0",
     "@openzeppelin/contracts": "^2.3.0"
   },
   "devDependencies": {

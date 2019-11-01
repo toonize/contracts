@@ -6,7 +6,7 @@ import { BigNumber } from "ethers/utils";
 export default class AvatarRegistry extends ethers.Contract {
     public static at(chain: Chain) {
         return new AvatarRegistry(
-            require("../networks/AvatarRegistry.json")[chain.config.chainId].address,
+            require("../networks/AvatarRegistry.json")[chain.network.chainId].address,
             chain.signer
         );
     }
