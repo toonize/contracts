@@ -1,8 +1,27 @@
 require("dotenv").config();
+const HDWalletProvider = require("truffle-hdwallet-provider");
 const LoomTruffleProvider = require("loom-truffle-provider");
 
 module.exports = {
     networks: {
+        mainnet: {
+            provider: () =>
+                new HDWalletProvider(
+                    process.env.ETHEREUM_ADMIN_PRIVATE_KEY,
+                    "https://mainnet.infura.io/v3/" + process.env.ETHEREUM_PROJECT_ID
+                ),
+            network_id: 1,
+            gasPrice: 2 * 10 ** 10 // 20 gwei
+        },
+        rinkeby: {
+            provider: () =>
+                new HDWalletProvider(
+                    process.env.ETHEREUM_ADMIN_PRIVATE_KEY,
+                    "https://rinkeby.infura.io/v3/" + process.env.ETHEREUM_PROJECT_ID
+                ),
+            network_id: 4,
+            gasPrice: 2 * 10 ** 10 // 20 gwei
+        },
         extdev: {
             provider: () => {
                 const provider = new LoomTruffleProvider(
@@ -49,7 +68,7 @@ module.exports = {
                     enabled: true,
                     runs: 200
                 },
-                evmVersion: "constantinople"
+                evmVersion: "byzantium"
             }
         }
     }
