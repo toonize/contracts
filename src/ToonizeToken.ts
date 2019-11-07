@@ -1,6 +1,7 @@
 import { Address } from "@lev-x/loom-x/dist";
 import Chain from "@lev-x/loom-x/dist/chains/Chain";
 import { ethers } from "ethers";
+import { BigNumber } from "ethers/utils";
 
 export interface Avatar {
     description: string;
@@ -44,18 +45,19 @@ export interface Item {
 
 export default class ToonizeToken extends ethers.Contract {
     public static at(chain: Chain) {
-        return new ToonizeToken(
-            require("../networks/AvatarRegistry.json")[chain.network.chainId].address,
-            chain.signer
-        );
+        return new ToonizeToken(require("../networks/ToonizeToken.json")[chain.network.chainId].address, chain.signer);
     }
 
     constructor(address: string, signerOrProvider: ethers.Signer | ethers.providers.Provider) {
-        super(address, require("../abis/AvatarRegistry.json"), signerOrProvider);
+        super(address, require("../abis/ToonizeToken.json"), signerOrProvider);
     }
 
-    public getAvatarsOf(account: Address, overrides = {}): Promise<Avatar[]> {
-        return this.functions.getAvatarsOf(account.toLocalAddressString(), overrides);
+    public getTokenIdsOf(account: Address, overrides = {}): Promise<BigNumber[]> {
+        return this.functions.getTokenIdsOf(account.toLocalAddressString(), overrides);
+    }
+
+    public getAvatarOf(tokenId: BigNumber, overrides = {}): Promise<Avatar> {
+        return this.functions.getAvatarOf(tokenId, overrides);
     }
 
     public addAvatar(to: Address, avatar: Avatar, overrides = {}): Promise<ethers.providers.TransactionResponse> {

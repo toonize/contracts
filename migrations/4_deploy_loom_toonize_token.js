@@ -6,7 +6,7 @@ const LoomToonizeToken = artifacts.require("LoomToonizeToken.sol");
 require("dotenv").config();
 
 module.exports = async function(deployer, network) {
-  if (network === "extdev" || network === "plasma") {
+  if (network.startsWith("extdev") || network.startsWith("plasma")) {
     LoomNetwork.setCurrent(network === "plasma" ? LoomNetwork.plasma : LoomNetwork.extdev);
     const chain = new LoomChain(process.env.ADMIN_PRIVATE_KEY);
     const gateway = await chain.getTransferGatewayAsync();

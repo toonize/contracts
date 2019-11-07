@@ -8,7 +8,7 @@ module.exports = {
             provider: () =>
                 new HDWalletProvider(
                     process.env.ETHEREUM_ADMIN_PRIVATE_KEY,
-                    "https://mainnet.infura.io/v3/" + process.env.ETHEREUM_PROJECT_ID
+                    "https://mainnet.infura.io/v3/d96dcf1cf3264be4ac0517a14b567e38"
                 ),
             network_id: 1,
             gasPrice: 2 * 10 ** 10 // 20 gwei
@@ -17,7 +17,7 @@ module.exports = {
             provider: () =>
                 new HDWalletProvider(
                     process.env.ETHEREUM_ADMIN_PRIVATE_KEY,
-                    "https://rinkeby.infura.io/v3/" + process.env.ETHEREUM_PROJECT_ID
+                    "https://rinkeby.infura.io/v3/d96dcf1cf3264be4ac0517a14b567e38"
                 ),
             network_id: 4,
             gasPrice: 2 * 10 ** 10 // 20 gwei

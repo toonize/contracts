@@ -22,21 +22,6 @@
   },
   {
     "constant": true,
-    "inputs": [],
-    "name": "name",
-    "outputs": [
-      {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": true,
     "inputs": [
       {
         "internalType": "uint256",
@@ -92,21 +77,6 @@
     "type": "function"
   },
   {
-    "constant": true,
-    "inputs": [],
-    "name": "totalSupply",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
     "constant": false,
     "inputs": [
       {
@@ -132,32 +102,6 @@
     "type": "function"
   },
   {
-    "constant": true,
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "owner",
-        "type": "address"
-      },
-      {
-        "internalType": "uint256",
-        "name": "index",
-        "type": "uint256"
-      }
-    ],
-    "name": "tokenOfOwnerByIndex",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
     "constant": false,
     "inputs": [
       {
@@ -180,27 +124,6 @@
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "index",
-        "type": "uint256"
-      }
-    ],
-    "name": "tokenByIndex",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -239,21 +162,6 @@
         "internalType": "uint256",
         "name": "",
         "type": "uint256"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "symbol",
-    "outputs": [
-      {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
       }
     ],
     "payable": false,
@@ -308,27 +216,6 @@
     "outputs": [],
     "payable": false,
     "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "tokenId",
-        "type": "uint256"
-      }
-    ],
-    "name": "tokenURI",
-    "outputs": [
-      {
-        "internalType": "string",
-        "name": "",
-        "type": "string"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -460,6 +347,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -477,6 +369,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -494,6 +391,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -511,6 +413,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -528,6 +435,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -545,6 +457,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -562,6 +479,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -579,6 +501,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -596,6 +523,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -613,6 +545,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -630,6 +567,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -647,6 +589,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -664,6 +611,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -681,6 +633,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -698,6 +655,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -715,6 +677,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -732,6 +699,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -749,6 +721,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -848,6 +825,57 @@
   {
     "constant": true,
     "inputs": [],
+    "name": "name",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "symbol",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "tokenURI",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
     "name": "owner",
     "outputs": [
       {
@@ -899,7 +927,28 @@
         "type": "address"
       }
     ],
-    "name": "getAvatarsOf",
+    "name": "getTokenIdsOf",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "tokenId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAvatarOf",
     "outputs": [
       {
         "components": [
@@ -953,6 +1002,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -970,6 +1024,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -987,6 +1046,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1004,6 +1068,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1021,6 +1090,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1038,6 +1112,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1055,6 +1134,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1072,6 +1156,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1089,6 +1178,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1106,6 +1200,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1123,6 +1222,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1140,6 +1244,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1157,6 +1266,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1174,6 +1288,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1191,6 +1310,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1208,6 +1332,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1225,6 +1354,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1242,6 +1376,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1254,9 +1393,9 @@
             "type": "tuple"
           }
         ],
-        "internalType": "struct Avatars.Avatar[]",
+        "internalType": "struct Avatars.Avatar",
         "name": "",
-        "type": "tuple[]"
+        "type": "tuple"
       }
     ],
     "payable": false,
@@ -1323,6 +1462,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1340,6 +1484,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1357,6 +1506,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1374,6 +1528,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1391,6 +1550,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1408,6 +1572,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1425,6 +1594,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1442,6 +1616,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1459,6 +1638,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1476,6 +1660,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1493,6 +1682,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1510,6 +1704,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1527,6 +1726,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1544,6 +1748,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1561,6 +1770,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1578,6 +1792,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1595,6 +1814,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",
@@ -1612,6 +1836,11 @@
                     "internalType": "string",
                     "name": "color",
                     "type": "string"
+                  },
+                  {
+                    "internalType": "string[]",
+                    "name": "attributes",
+                    "type": "string[]"
                   }
                 ],
                 "internalType": "struct Avatars.Item",

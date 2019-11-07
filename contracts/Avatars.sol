@@ -40,6 +40,7 @@ library Avatars {
     struct Item {
         string key;
         string color;
+        string[] attributes;
     }
 
     function isValid(Avatars.Avatar memory avatar) public pure returns (bool) {
