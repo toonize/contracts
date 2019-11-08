@@ -566,13 +566,53 @@
         "name": "ApprovalForAll",
         "type": "event",
         "signature": "0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31"
+      },
+      "0x764367735a1d7d94d0a25e85861b84bf88dbbf9fc63e3de0fb35b9687e99fa28": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "bytes20",
+            "name": "hash",
+            "type": "bytes20"
+          }
+        ],
+        "name": "AvatarAdded",
+        "type": "event",
+        "signature": "0x764367735a1d7d94d0a25e85861b84bf88dbbf9fc63e3de0fb35b9687e99fa28"
+      },
+      "0x06ac852630a2a14a4ac0ea29ac6c7dafe48bbffa0424e74edf04b4078fe2e507": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "bytes20",
+            "name": "hash",
+            "type": "bytes20"
+          }
+        ],
+        "name": "AvatarSelected",
+        "type": "event",
+        "signature": "0x06ac852630a2a14a4ac0ea29ac6c7dafe48bbffa0424e74edf04b4078fe2e507"
       }
     },
     "links": {
       "Avatars": "0x5baeEf49661E56E6D046Ba94BEd56c8EF1DF929A"
     },
-    "address": "0xcDdD22a852BA80573746F19696a133aC7DCc2899",
-    "transactionHash": "0xa2c7bde997279188749050ce2a0376026a34eaa0e4c4cb317c97a5168dc3e52c"
+    "address": "0x24dD4167f9a180Dd9059E4edC782fD486d9C286E",
+    "transactionHash": "0x1ea28d37632c13b906af00e894b99ae4a4400a591bbb5ae4086c06f21f173910"
   },
   "4": {
     "events": {
@@ -1141,12 +1181,52 @@
         "name": "ApprovalForAll",
         "type": "event",
         "signature": "0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31"
+      },
+      "0x764367735a1d7d94d0a25e85861b84bf88dbbf9fc63e3de0fb35b9687e99fa28": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "bytes20",
+            "name": "hash",
+            "type": "bytes20"
+          }
+        ],
+        "name": "AvatarAdded",
+        "type": "event",
+        "signature": "0x764367735a1d7d94d0a25e85861b84bf88dbbf9fc63e3de0fb35b9687e99fa28"
+      },
+      "0x06ac852630a2a14a4ac0ea29ac6c7dafe48bbffa0424e74edf04b4078fe2e507": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "bytes20",
+            "name": "hash",
+            "type": "bytes20"
+          }
+        ],
+        "name": "AvatarSelected",
+        "type": "event",
+        "signature": "0x06ac852630a2a14a4ac0ea29ac6c7dafe48bbffa0424e74edf04b4078fe2e507"
       }
     },
     "links": {
       "Avatars": "0xC24e0F2B81678c9218898E2dBdCA568Df6a526D3"
     },
-    "address": "0x24dD4167f9a180Dd9059E4edC782fD486d9C286E",
-    "transactionHash": "0x1caff395f7ead0b877655c31a1087d9c8b1d5cf1b262e4a8b6c2926f1c9aaac5"
+    "address": "0x5B8D215e4F3238e96a6cF68E39FA44026Ab5B4F9",
+    "transactionHash": "0x688e3432342db490cd74e8350fa3f311f729e9e281b99d3abd93798af1103427"
   }
 }
