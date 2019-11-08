@@ -1,4 +1,3 @@
-const Avatars = artifacts.require("Avatars");
 const ToonizeToken = artifacts.require("ToonizeToken");
 const { BN, expectRevert } = require("@openzeppelin/test-helpers");
 const { expect } = require("chai");
@@ -12,8 +11,6 @@ const AVATAR_2 = "0xc0607a1f15d692923cc7bda034c6073a8a7dff5b";
 
 contract("ToonizeToken", ([, user]) => {
     it("should add and select avatar", async () => {
-        const lib = await Avatars.new();
-        await ToonizeToken.link("Avatars", lib.address);
         const token = await ToonizeToken.new("0x0000000000000000000000000000000000000000", PRICE);
 
         expectRevert(token.addAvatar(AVATAR_1, { from: user }), "ToonizeToken: price too low");

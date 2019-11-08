@@ -1,4 +1,3 @@
-const Avatars = artifacts.require("Avatars.sol");
 const ToonizeToken = artifacts.require("ToonizeToken.sol");
 const {BN} = require("@openzeppelin/test-helpers");
 
@@ -9,7 +8,6 @@ require("dotenv").config();
 module.exports = async function(deployer, network) {
   if (network.startsWith("rinkeby") || network.startsWith("mainnet")) {
     const gateway = network.startsWith("mainnet") ? process.env.ETHEREUM_MAINNET_GATEWAY : process.env.ETHEREUM_RINKEBY_GATEWAY;
-    await deployer.link(Avatars, ToonizeToken);
     await deployer.deploy(ToonizeToken, gateway, PRICE);
   }
 };

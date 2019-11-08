@@ -1,493 +1,45 @@
 {
   "1": {
     "events": {
-      "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": true,
-            "internalType": "address",
-            "name": "previousOwner",
-            "type": "address"
-          },
-          {
-            "indexed": true,
-            "internalType": "address",
-            "name": "newOwner",
-            "type": "address"
-          }
-        ],
-        "name": "OwnershipTransferred",
-        "type": "event",
-        "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
-      },
-      "0x6ff724a6e14e807427e6a877e62b067f81ee868da48086e0affe0ba1fc8c98e3": {
+      "0x764367735a1d7d94d0a25e85861b84bf88dbbf9fc63e3de0fb35b9687e99fa28": {
         "anonymous": false,
         "inputs": [
           {
             "indexed": false,
             "internalType": "address",
-            "name": "to",
+            "name": "user",
             "type": "address"
           },
           {
             "indexed": false,
-            "internalType": "uint256",
-            "name": "tokenId",
-            "type": "uint256"
-          },
-          {
-            "components": [
-              {
-                "internalType": "string",
-                "name": "description",
-                "type": "string"
-              },
-              {
-                "components": [
-                  {
-                    "internalType": "string",
-                    "name": "face",
-                    "type": "string"
-                  },
-                  {
-                    "internalType": "string",
-                    "name": "eyes",
-                    "type": "string"
-                  },
-                  {
-                    "internalType": "string",
-                    "name": "betweenEyes",
-                    "type": "string"
-                  },
-                  {
-                    "internalType": "string",
-                    "name": "mouth",
-                    "type": "string"
-                  },
-                  {
-                    "internalType": "string",
-                    "name": "body",
-                    "type": "string"
-                  }
-                ],
-                "internalType": "struct Avatars.Options",
-                "name": "options",
-                "type": "tuple"
-              },
-              {
-                "components": [
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "face",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "hair",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "eyebrows",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "eyes",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "nose",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "mouth",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "clothes",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "body",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "background",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "outwear",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "hat",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "glasses",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "accessory",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "expression",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "hand",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "balloon",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "pet",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "goods",
-                    "type": "tuple"
-                  }
-                ],
-                "internalType": "struct Avatars.Items",
-                "name": "items",
-                "type": "tuple"
-              }
-            ],
-            "indexed": false,
-            "internalType": "struct Avatars.Avatar",
-            "name": "avatar",
-            "type": "tuple"
+            "internalType": "bytes20",
+            "name": "hash",
+            "type": "bytes20"
           }
         ],
         "name": "AvatarAdded",
         "type": "event",
-        "signature": "0x6ff724a6e14e807427e6a877e62b067f81ee868da48086e0affe0ba1fc8c98e3"
+        "signature": "0x764367735a1d7d94d0a25e85861b84bf88dbbf9fc63e3de0fb35b9687e99fa28"
+      },
+      "0x06ac852630a2a14a4ac0ea29ac6c7dafe48bbffa0424e74edf04b4078fe2e507": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "bytes20",
+            "name": "hash",
+            "type": "bytes20"
+          }
+        ],
+        "name": "AvatarSelected",
+        "type": "event",
+        "signature": "0x06ac852630a2a14a4ac0ea29ac6c7dafe48bbffa0424e74edf04b4078fe2e507"
       },
       "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
         "anonymous": false,
@@ -567,542 +119,72 @@
         "type": "event",
         "signature": "0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31"
       },
-      "0x764367735a1d7d94d0a25e85861b84bf88dbbf9fc63e3de0fb35b9687e99fa28": {
+      "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
         "anonymous": false,
         "inputs": [
           {
-            "indexed": false,
+            "indexed": true,
             "internalType": "address",
-            "name": "user",
+            "name": "previousOwner",
             "type": "address"
           },
           {
-            "indexed": false,
-            "internalType": "bytes20",
-            "name": "hash",
-            "type": "bytes20"
-          }
-        ],
-        "name": "AvatarAdded",
-        "type": "event",
-        "signature": "0x764367735a1d7d94d0a25e85861b84bf88dbbf9fc63e3de0fb35b9687e99fa28"
-      },
-      "0x06ac852630a2a14a4ac0ea29ac6c7dafe48bbffa0424e74edf04b4078fe2e507": {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": false,
+            "indexed": true,
             "internalType": "address",
-            "name": "user",
+            "name": "newOwner",
             "type": "address"
-          },
-          {
-            "indexed": false,
-            "internalType": "bytes20",
-            "name": "hash",
-            "type": "bytes20"
           }
         ],
-        "name": "AvatarSelected",
+        "name": "OwnershipTransferred",
         "type": "event",
-        "signature": "0x06ac852630a2a14a4ac0ea29ac6c7dafe48bbffa0424e74edf04b4078fe2e507"
+        "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
       }
     },
-    "links": {
-      "Avatars": "0x5baeEf49661E56E6D046Ba94BEd56c8EF1DF929A"
-    },
-    "address": "0x24dD4167f9a180Dd9059E4edC782fD486d9C286E",
-    "transactionHash": "0x1ea28d37632c13b906af00e894b99ae4a4400a591bbb5ae4086c06f21f173910"
+    "links": {},
+    "address": "0xAC077e327fCA3264CcAe15beE56A486bf02B5F68",
+    "transactionHash": "0x316ecac6753020412dea80aaa5d3dfa5811724263ce43a8071a83d1a4e070158"
   },
   "4": {
     "events": {
-      "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": true,
-            "internalType": "address",
-            "name": "previousOwner",
-            "type": "address"
-          },
-          {
-            "indexed": true,
-            "internalType": "address",
-            "name": "newOwner",
-            "type": "address"
-          }
-        ],
-        "name": "OwnershipTransferred",
-        "type": "event",
-        "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
-      },
-      "0x6ff724a6e14e807427e6a877e62b067f81ee868da48086e0affe0ba1fc8c98e3": {
+      "0x764367735a1d7d94d0a25e85861b84bf88dbbf9fc63e3de0fb35b9687e99fa28": {
         "anonymous": false,
         "inputs": [
           {
             "indexed": false,
             "internalType": "address",
-            "name": "to",
+            "name": "user",
             "type": "address"
           },
           {
             "indexed": false,
-            "internalType": "uint256",
-            "name": "tokenId",
-            "type": "uint256"
-          },
-          {
-            "components": [
-              {
-                "internalType": "string",
-                "name": "description",
-                "type": "string"
-              },
-              {
-                "components": [
-                  {
-                    "internalType": "string",
-                    "name": "face",
-                    "type": "string"
-                  },
-                  {
-                    "internalType": "string",
-                    "name": "eyes",
-                    "type": "string"
-                  },
-                  {
-                    "internalType": "string",
-                    "name": "betweenEyes",
-                    "type": "string"
-                  },
-                  {
-                    "internalType": "string",
-                    "name": "mouth",
-                    "type": "string"
-                  },
-                  {
-                    "internalType": "string",
-                    "name": "body",
-                    "type": "string"
-                  }
-                ],
-                "internalType": "struct Avatars.Options",
-                "name": "options",
-                "type": "tuple"
-              },
-              {
-                "components": [
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "face",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "hair",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "eyebrows",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "eyes",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "nose",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "mouth",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "clothes",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "body",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "background",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "outwear",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "hat",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "glasses",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "accessory",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "expression",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "hand",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "balloon",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "pet",
-                    "type": "tuple"
-                  },
-                  {
-                    "components": [
-                      {
-                        "internalType": "string",
-                        "name": "key",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string",
-                        "name": "color",
-                        "type": "string"
-                      },
-                      {
-                        "internalType": "string[]",
-                        "name": "attributes",
-                        "type": "string[]"
-                      }
-                    ],
-                    "internalType": "struct Avatars.Item",
-                    "name": "goods",
-                    "type": "tuple"
-                  }
-                ],
-                "internalType": "struct Avatars.Items",
-                "name": "items",
-                "type": "tuple"
-              }
-            ],
-            "indexed": false,
-            "internalType": "struct Avatars.Avatar",
-            "name": "avatar",
-            "type": "tuple"
+            "internalType": "bytes20",
+            "name": "hash",
+            "type": "bytes20"
           }
         ],
         "name": "AvatarAdded",
         "type": "event",
-        "signature": "0x6ff724a6e14e807427e6a877e62b067f81ee868da48086e0affe0ba1fc8c98e3"
+        "signature": "0x764367735a1d7d94d0a25e85861b84bf88dbbf9fc63e3de0fb35b9687e99fa28"
+      },
+      "0x06ac852630a2a14a4ac0ea29ac6c7dafe48bbffa0424e74edf04b4078fe2e507": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "bytes20",
+            "name": "hash",
+            "type": "bytes20"
+          }
+        ],
+        "name": "AvatarSelected",
+        "type": "event",
+        "signature": "0x06ac852630a2a14a4ac0ea29ac6c7dafe48bbffa0424e74edf04b4078fe2e507"
       },
       "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
         "anonymous": false,
@@ -1182,51 +264,29 @@
         "type": "event",
         "signature": "0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31"
       },
-      "0x764367735a1d7d94d0a25e85861b84bf88dbbf9fc63e3de0fb35b9687e99fa28": {
+      "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
         "anonymous": false,
         "inputs": [
           {
-            "indexed": false,
+            "indexed": true,
             "internalType": "address",
-            "name": "user",
+            "name": "previousOwner",
             "type": "address"
           },
           {
-            "indexed": false,
-            "internalType": "bytes20",
-            "name": "hash",
-            "type": "bytes20"
-          }
-        ],
-        "name": "AvatarAdded",
-        "type": "event",
-        "signature": "0x764367735a1d7d94d0a25e85861b84bf88dbbf9fc63e3de0fb35b9687e99fa28"
-      },
-      "0x06ac852630a2a14a4ac0ea29ac6c7dafe48bbffa0424e74edf04b4078fe2e507": {
-        "anonymous": false,
-        "inputs": [
-          {
-            "indexed": false,
+            "indexed": true,
             "internalType": "address",
-            "name": "user",
+            "name": "newOwner",
             "type": "address"
-          },
-          {
-            "indexed": false,
-            "internalType": "bytes20",
-            "name": "hash",
-            "type": "bytes20"
           }
         ],
-        "name": "AvatarSelected",
+        "name": "OwnershipTransferred",
         "type": "event",
-        "signature": "0x06ac852630a2a14a4ac0ea29ac6c7dafe48bbffa0424e74edf04b4078fe2e507"
+        "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
       }
     },
-    "links": {
-      "Avatars": "0xC24e0F2B81678c9218898E2dBdCA568Df6a526D3"
-    },
-    "address": "0x5B8D215e4F3238e96a6cF68E39FA44026Ab5B4F9",
-    "transactionHash": "0x688e3432342db490cd74e8350fa3f311f729e9e281b99d3abd93798af1103427"
+    "links": {},
+    "address": "0x5391a55e9CE4e9724e189607e0f1EED564b6D4AB",
+    "transactionHash": "0x154ac06916e65fd05bdebf9446614075155ee84bdc980a0a0d31d9079e96ec9d"
   }
 }
