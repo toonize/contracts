@@ -6,13 +6,16 @@ import { BigNumber } from "ethers/utils";
 
 import ERC721Full from "./ERC721Full";
 
-export default class ToonizeToken extends ERC721Full {
+export default class LoomToonizeToken extends ERC721Full {
     public static at(chain: Chain) {
-        return new ToonizeToken(require("../networks/ToonizeToken.json")[chain.network.chainId].address, chain.signer);
+        return new LoomToonizeToken(
+            require("../networks/LoomToonizeToken.json")[chain.network.chainId].address,
+            chain.signer
+        );
     }
 
     constructor(address: string, signerOrProvider: Signer | Provider) {
-        super(address, require("../abis/ToonizeToken.json"), signerOrProvider);
+        super(address, require("../abis/LoomToonizeToken.json"), signerOrProvider);
     }
 
     public getAvatarsOf(account: Address, overrides = {}): Promise<string[]> {
@@ -21,10 +24,6 @@ export default class ToonizeToken extends ERC721Full {
 
     public getSelectedAvatarOf(tokenId: BigNumber, overrides = {}): Promise<string> {
         return this.functions.getSelectedAvatarOf(tokenId, overrides);
-    }
-
-    public addAvatar(avatar: string, overrides = {}): Promise<TransactionResponse> {
-        return this.functions.addAvatar(avatar, overrides);
     }
 
     public selectAvatar(avatar: string, overrides = {}): Promise<TransactionResponse> {

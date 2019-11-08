@@ -10,7 +10,6 @@ contract ToonizeToken is Ownable, ERC721Full {
     mapping(address => bytes20[]) private _avatarsOfUser;
     mapping(address => bytes20) private _selectedAvatarOfUser;
 
-    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
     event AvatarAdded(address user, bytes20 hash);
     event AvatarSelected(address user, bytes20 hash);
 
@@ -37,6 +36,7 @@ contract ToonizeToken is Ownable, ERC721Full {
 
         _avatarsOfUser[msg.sender].push(hash);
         _selectedAvatarOfUser[msg.sender] = hash;
+        _mint(msg.sender, uint256(bytes32(hash)));
 
         emit AvatarAdded(msg.sender, hash);
         emit AvatarSelected(msg.sender, hash);

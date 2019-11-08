@@ -373,6 +373,25 @@
     "anonymous": false,
     "inputs": [
       {
+        "indexed": false,
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bytes20",
+        "name": "hash",
+        "type": "bytes20"
+      }
+    ],
+    "name": "AvatarSelected",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
         "indexed": true,
         "internalType": "address",
         "name": "from",
@@ -443,6 +462,63 @@
     ],
     "name": "ApprovalForAll",
     "type": "event"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getAvatarsOf",
+    "outputs": [
+      {
+        "internalType": "bytes20[]",
+        "name": "",
+        "type": "bytes20[]"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "user",
+        "type": "address"
+      }
+    ],
+    "name": "getSelectedAvatarOf",
+    "outputs": [
+      {
+        "internalType": "bytes20",
+        "name": "hash",
+        "type": "bytes20"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "internalType": "bytes20",
+        "name": "hash",
+        "type": "bytes20"
+      }
+    ],
+    "name": "selectAvatar",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
   },
   {
     "constant": false,
