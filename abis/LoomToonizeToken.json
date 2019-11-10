@@ -380,9 +380,9 @@
       },
       {
         "indexed": false,
-        "internalType": "bytes20",
+        "internalType": "bytes32",
         "name": "hash",
-        "type": "bytes20"
+        "type": "bytes32"
       }
     ],
     "name": "AvatarSelected",
@@ -475,9 +475,9 @@
     "name": "getAvatarsOf",
     "outputs": [
       {
-        "internalType": "bytes20[]",
+        "internalType": "bytes32[]",
         "name": "",
-        "type": "bytes20[]"
+        "type": "bytes32[]"
       }
     ],
     "payable": false,
@@ -496,9 +496,9 @@
     "name": "getSelectedAvatarOf",
     "outputs": [
       {
-        "internalType": "bytes20",
+        "internalType": "bytes32",
         "name": "hash",
-        "type": "bytes20"
+        "type": "bytes32"
       }
     ],
     "payable": false,
@@ -509,9 +509,9 @@
     "constant": false,
     "inputs": [
       {
-        "internalType": "bytes20",
+        "internalType": "bytes32",
         "name": "hash",
-        "type": "bytes20"
+        "type": "bytes32"
       }
     ],
     "name": "selectAvatar",
