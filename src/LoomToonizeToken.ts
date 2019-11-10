@@ -2,7 +2,6 @@ import { Address } from "@lev-x/loom-x/dist";
 import Chain from "@lev-x/loom-x/dist/chains/Chain";
 import { Signer } from "ethers";
 import { Provider, TransactionResponse } from "ethers/providers";
-import { BigNumber } from "ethers/utils";
 
 import ERC721Full from "./ERC721Full";
 
@@ -22,8 +21,8 @@ export default class LoomToonizeToken extends ERC721Full {
         return this.functions.getAvatarsOf(account.toLocalAddressString(), overrides);
     }
 
-    public getSelectedAvatarOf(tokenId: BigNumber, overrides = {}): Promise<string> {
-        return this.functions.getSelectedAvatarOf(tokenId, overrides);
+    public getSelectedAvatarOf(account: Address, overrides = {}): Promise<string> {
+        return this.functions.getSelectedAvatarOf(account.toLocalAddressString(), overrides);
     }
 
     public selectAvatar(avatar: string, overrides = {}): Promise<TransactionResponse> {
