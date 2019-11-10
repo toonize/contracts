@@ -138,11 +138,51 @@
         "name": "OwnershipTransferred",
         "type": "event",
         "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
+      },
+      "0xfebb4542aa99d18d5b36469a59baa37bac1890bd93f78e8456a626192a6d733e": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "bytes32",
+            "name": "hash",
+            "type": "bytes32"
+          }
+        ],
+        "name": "AvatarAdded",
+        "type": "event",
+        "signature": "0xfebb4542aa99d18d5b36469a59baa37bac1890bd93f78e8456a626192a6d733e"
+      },
+      "0xd7884c523101f1a4a0c6ee711d49e187db84c9402a825d3d522a0f75262f389c": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "bytes32",
+            "name": "hash",
+            "type": "bytes32"
+          }
+        ],
+        "name": "AvatarSelected",
+        "type": "event",
+        "signature": "0xd7884c523101f1a4a0c6ee711d49e187db84c9402a825d3d522a0f75262f389c"
       }
     },
     "links": {},
-    "address": "0xAC077e327fCA3264CcAe15beE56A486bf02B5F68",
-    "transactionHash": "0x316ecac6753020412dea80aaa5d3dfa5811724263ce43a8071a83d1a4e070158"
+    "address": "0x5644a28c121F1467FFfad8A9ef70780d48C90378",
+    "transactionHash": "0x418e29fa45391ce36f832ade2b82c6d543ad0ccada03f618879092a29e8f70a3"
   },
   "4": {
     "events": {
@@ -283,10 +323,50 @@
         "name": "OwnershipTransferred",
         "type": "event",
         "signature": "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0"
+      },
+      "0xfebb4542aa99d18d5b36469a59baa37bac1890bd93f78e8456a626192a6d733e": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "bytes32",
+            "name": "hash",
+            "type": "bytes32"
+          }
+        ],
+        "name": "AvatarAdded",
+        "type": "event",
+        "signature": "0xfebb4542aa99d18d5b36469a59baa37bac1890bd93f78e8456a626192a6d733e"
+      },
+      "0xd7884c523101f1a4a0c6ee711d49e187db84c9402a825d3d522a0f75262f389c": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "bytes32",
+            "name": "hash",
+            "type": "bytes32"
+          }
+        ],
+        "name": "AvatarSelected",
+        "type": "event",
+        "signature": "0xd7884c523101f1a4a0c6ee711d49e187db84c9402a825d3d522a0f75262f389c"
       }
     },
     "links": {},
-    "address": "0x5391a55e9CE4e9724e189607e0f1EED564b6D4AB",
-    "transactionHash": "0x154ac06916e65fd05bdebf9446614075155ee84bdc980a0a0d31d9079e96ec9d"
+    "address": "0xe7B7e6c14044d8Fa2B558Eca5281FC2B6b5a5647",
+    "transactionHash": "0x87e09adb9d960172b1d64e78a4a88be4b1b59721d3bcd6a46d69f89741744c1e"
   }
 }

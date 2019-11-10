@@ -98,11 +98,31 @@
         "name": "ApprovalForAll",
         "type": "event",
         "signature": "0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31"
+      },
+      "0xd7884c523101f1a4a0c6ee711d49e187db84c9402a825d3d522a0f75262f389c": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "bytes32",
+            "name": "hash",
+            "type": "bytes32"
+          }
+        ],
+        "name": "AvatarSelected",
+        "type": "event",
+        "signature": "0xd7884c523101f1a4a0c6ee711d49e187db84c9402a825d3d522a0f75262f389c"
       }
     },
     "links": {},
-    "address": "0x48bE4bB554E3e12BE3af6f9E946582DAf45762Ac",
-    "transactionHash": "0x9d1d077ea786729c3406dea99d8ce6581843652ddac2e0aae8f1e4ed256c8537"
+    "address": "0xa9526A36B8f5079AC7C09f0eB757a2AE7Ce13C89",
+    "transactionHash": "0xf6b4067e3665fe43db9bf9ef26946c1a0311bac03e85843df308256aca66b0c9"
   },
   "13654820909954": {
     "events": {
@@ -203,10 +223,30 @@
         "name": "ApprovalForAll",
         "type": "event",
         "signature": "0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31"
+      },
+      "0xd7884c523101f1a4a0c6ee711d49e187db84c9402a825d3d522a0f75262f389c": {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "user",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "bytes32",
+            "name": "hash",
+            "type": "bytes32"
+          }
+        ],
+        "name": "AvatarSelected",
+        "type": "event",
+        "signature": "0xd7884c523101f1a4a0c6ee711d49e187db84c9402a825d3d522a0f75262f389c"
       }
     },
     "links": {},
-    "address": "0xC16C7aa527fC0A8c7CF4Af82E34473947515e771",
-    "transactionHash": "0x75bcc0633cbab7cecedf7f3fd00f5af7442e9913ce77cd851cf43234581d430a"
+    "address": "0x90b02D24CE95a82F174ca743e479ff9daE99B56C",
+    "transactionHash": "0x519565851a3bd968e94424a598cde207384ceb678da91a78fc6ae1aa6993011a"
   }
 }
