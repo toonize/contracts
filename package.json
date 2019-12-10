@@ -37,21 +37,21 @@
     "prepublish": "yarn build"
   },
   "dependencies": {
-    "@lev-x/loom-x": "^0.5.0",
-    "@openzeppelin/contracts": "^2.3.0"
+    "@lev-x/loom-x": "^0.5.6",
+    "@openzeppelin/contracts": "^2.4.0"
   },
   "devDependencies": {
-    "@openzeppelin/test-helpers": "^0.5.3",
+    "@openzeppelin/test-helpers": "^0.5.4",
     "chai": "^4.2.0",
     "dotenv": "^8.2.0",
-    "ganache-cli": "^6.4.3",
+    "ganache-cli": "^6.7.0",
     "husky": "^2.3.0",
-    "loom-js": "^1.51.1",
+    "loom-js": "1.54.2",
     "loom-truffle-provider": "^0.13.0",
     "prettier": "^1.18.2",
     "prettier-plugin-solidity": "^1.0.0-alpha.34",
     "solhint": "^2.0.0",
-    "truffle": "^5.0.41",
+    "truffle": "^5.0.44",
     "truffle-hdwallet-provider": "^1.0.17",
     "tslint": "^5.15.0",
     "tslint-config-prettier": "^1.18.0",
